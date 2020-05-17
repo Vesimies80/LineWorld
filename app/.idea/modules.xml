@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="lineworld/app" />
+      <module fileurl="file://$PROJECT_DIR$/../lineworld.iml" filepath="$PROJECT_DIR$/../lineworld.iml" group="lineworld" />
+      <module fileurl="file://$PROJECT_DIR$/../opencv/opencv.iml" filepath="$PROJECT_DIR$/../opencv/opencv.iml" group="lineworld/opencv" />
+    </modules>
+  </component>
+</project>
