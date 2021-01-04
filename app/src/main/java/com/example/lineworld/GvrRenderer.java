@@ -25,24 +25,24 @@ public class GvrRenderer implements GvrView.StereoRenderer {
 
     private static final String VERTEX_SHADER =
             "attribute vec4 position;\n" +
-                    "attribute vec4 in_tex\n;" +
-                    "varying vec2 out_tex\n;" +
-                    "uniform mat4 mvpMatrix;\n" +
-                    "uniform mat4 texMatrix;\n" +
-                    "void main() {\n" +
-                    "	gl_Position = mvpMatrix * position;\n" +
-                    "	out_tex = (texMatrix * in_tex).xy;\n" +
-                    "}\n";
+            "attribute vec4 in_tex\n;" +
+            "varying vec2 out_tex\n;" +
+            "uniform mat4 mvpMatrix;\n" +
+            "uniform mat4 texMatrix;\n" +
+            "void main() {\n" +
+            "	gl_Position = mvpMatrix * position;\n" +
+            "	out_tex = (texMatrix * in_tex).xy;\n" +
+            "}\n";
     private static final String FRAGMENT_SHADER =
             "#extension GL_OES_EGL_image_external : require\n" +
-                    "precision mediump float;\n" +
-                    "varying vec2 out_tex;\n" +
-                    "\n" +
-                    "uniform sampler2D oes_tex;\n" +
-                    "\n" +
-                    "void main() {\n" +
-                    "	gl_FragColor = texture2D(oes_tex, out_tex);\n" +
-                    "}\n";
+            "precision mediump float;\n" +
+            "varying vec2 out_tex;\n" +
+            "\n" +
+            "uniform sampler2D oes_tex;\n" +
+            "\n" +
+            "void main() {\n" +
+            "	gl_FragColor = texture2D(oes_tex, out_tex);\n" +
+            "}\n";
 
     private GvrView surface;
     private GlShader shader = null;
