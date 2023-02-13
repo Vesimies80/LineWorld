@@ -1,6 +1,5 @@
-This project aims to provide an application that shows world without details in VR view provided by Cardboard SDK. As an image real time camera feed is being used. To archieve this OpenGL ES, OpenCV and camera 2 are being used. 
-
-![Application overview](.readme_image.jpg)
+This project continues the work of Aleksi Viljanen and here is his original repository. https://gitlab.com/aleksiviljanen/lineworld.git
+I changed the approach of the edge detection to make it lighter and give more details so the application is more usable
 
 To get this project up and running should not be too hard. It basically requires few things which are:
 
